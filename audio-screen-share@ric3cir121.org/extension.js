@@ -19,6 +19,19 @@ import {Extension, gettext, ngettext, pgettext} from 'resource:///org/gnome/shel
 
 export default class AudioScreenSharing extends Extension {
     enable() {
+        // Add a menu item to open the preferences window
+        this._indicator.menu.addAction(gettext('Preferences'),
+            () => this.openPreferences());
+
+        // Create a new GSettings object, and bind the "show-indicator"
+        // setting to the "visible" property.
+        this._settings = this.getSettings();
+        this._settings.bind('show-indicator', this._indicator, 'visible', Gio.SettingsBindFlags.DEFAULT);
+
+        // Watch for changes to a specific setting
+        this._settings.connect('changed::show-indicator', (settings, key) => {
+            console.debug(`${key} = ${settings.get_value(key).print(true)}`);
+        });
     }
 
     disable() {
