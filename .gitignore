@@ -1,3 +1,6 @@
 
 # Testing scripts
 *.sh
+
+# Package output
+*.zip
