@@ -1,0 +1,8 @@
+{
+  "name": "Audio Screen Share",
+  "description": "Adds audio to screen sharing",
+  "uuid": "audio-screen-share@ric3cir121.org",
+  "shell-version": [
+    "48"
+  ]
+}
