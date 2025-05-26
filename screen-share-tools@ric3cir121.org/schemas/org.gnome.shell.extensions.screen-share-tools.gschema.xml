@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist>
-  <schema id="org.gnome.shell.extensions.audio-screen-share" path="/org/gnome/shell/extensions/audio-screen-share@ric3cir121.org/">
+  <schema id="org.gnome.shell.extensions.screen-share-tools" path="/org/gnome/shell/extensions/screen-share-tools@ric3cir121.org/">
     <key name="enable-audio-screen-sharing" type="b">
       <default>true</default>
     </key>
