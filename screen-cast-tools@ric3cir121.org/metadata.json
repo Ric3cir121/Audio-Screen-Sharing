@@ -1,0 +1,10 @@
+{
+  "name": "Screen Share Tools",
+  "description": "Adds audio to screen sharing",
+  "uuid": "screen-cast-tools@ric3cir121.org",
+  "settings-schema": "org.gnome.shell.extensions.screen-cast-tools",
+  "gettext-domain": "screen-cast-tools@ric3cir121.org",
+  "shell-version": [
+    "48"
+  ]
+}
